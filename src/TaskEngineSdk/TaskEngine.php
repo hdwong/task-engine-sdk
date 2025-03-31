@@ -160,7 +160,7 @@ class TaskEngine
      */
     public function setTimeout($timeout = 900)
     {
-        $this->params['timeout'] = intval(max(60, $timeout));
+        $this->params['timeout'] = max(60, intval($timeout));
         return $this;
     }
 
